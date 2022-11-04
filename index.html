@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div> Venda dos vendedores </div> <br>
+        <form>
+            <fieldset>
+                <legend> LANCAMENTOS </legend> <br>
+                
+                <label for="txtNome">Nome</label>
+                <input type="text" id="txtNome" value=""/><br><br>
+                
+                <label for="txtMes">Mes</label>
+                <select id="txtMes">
+                    <option value="01">JAN</option>
+                    <option value="02">FEV</option>
+                    <option value="03">MAR</option>
+                    <option value="04">ABR</option>
+                    <option value="05">MAI</option>
+                    <option value="06">JUN</option>
+                    <option value="07">JUL</option>
+                    <option value="08">AGO</option>
+                    <option value="09">SET</option>
+                    <option value="10">OUT</option>
+                    <option value="11">NOV</option>
+                    <option value="12">DEZ</option>
+                </select>
+                <br><br>
+                
+                <label for="txtValor">Valor</label>
+                <input type="text" id="txtValor" value=""/><br><br>
+                    
+                <input type="button" value="SALVAR" id="botao"/>
+                <input type="button" value="MOSTRAR GRAFICO" id="grafico"/>
+                <input type="radio" class="radio" id="horizontal" name ="direcao" checked/> horizontal
+                <input type="radio" class="radio" id="vertical" name="direcao"/> vertical
+            </fieldset>
+        </form>
+        
+        <div id="id_grafico"></div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="js/funcao_local_storage.js"></script>
+        <script src="js/registrosVendas.js"></script>
+    </body>
+</html>
